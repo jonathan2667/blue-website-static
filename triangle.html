@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="hero">
+         <div class="navbar" onmouseover="closeFunction()">
+            <a href="index.html">
+                <div class="container">
+                    <div class="face">
+                        <div class="eyes">
+                            <span class="eye"></span>
+                            <span class="eye"></span>
+                        </div>
+                    </div>
+                    <div class="face">
+                        <div class="eyes">
+                            <span class="eye"></span>
+                            <span class="eye"></span>
+                        </div>
+                    </div>
+                    <div class="face">
+                        <div class="eyes">
+                            <span class="eye"></span>
+                            <span class="eye"></span>
+                        </div>
+                    </div>
+                </div> 
+            </a>
+            <div>
+                <button type="button">Sign Up</button>
+                <button type="button">Login</button>
+            </div>
+         </div>
+
+         <div id="menu" class="sidemenu" onmouseover="openFunction()">
+            <img src="images/menu.png" class="menu-img" id="mainbox" onmouseover="openFunction()" onclick="closeFunction()">
+        
+
+            <div class="menu-content">
+                <a href="index.html"><h4><u>Home</u></h4></a>
+                <a href="projects.html"><h4><u>Projects</u></h4></a>
+                <a href="contact.html"><h4><u>Contact</u></h4></a>
+            </div>
+
+
+            <div class="useful-links">
+                <img src="images/info.png">
+                <div class="tooltip">
+                    <img src="images/share.png" onclick="copyUrl()">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="triangle" onmouseover="closeFunction()">
+            <div class="triangle-introduction">
+                <h1>Welcome to my online triangle calculator!</h1>
+                <h2>Enter the sides length of your triangle :</h2> <br>
+                <h4><em>!!! Try using number under 20 if you want a visualization of the triangle. !!!</em></h4>
+            </div>
+            <div class='table-responsive'>
+                <table class="table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Sides</th>
+                            <th>Angles</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="input-group side-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Side A</div>
+                                    </div>								
+                                    <input type="number" class="numbersonly form-control numpad" id="sideA_input" tabindex="1" 
+                                            value="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-group angle-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="fa fa-angle-left"></i>  A</div>
+                                    </div>																
+                                    <input type="number" class="numbersonly form-control numpad" id="angleA_input" tabindex="4"
+                                            value="">
+                                </div>	
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-group side-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Side B</div>
+                                    </div>	
+                                    <input type="number" class="numbersonly form-control numpad" id="sideB_input" tabindex="2"
+                                            value="">
+                                </div>	
+                            </td>
+                            <td>															
+                                <div class="input-group angle-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="fa fa-angle-left"></i>   B</div>
+                                    </div>	
+                                    <input type="number" class="numbersonly form-control numpad" id="angleB_input" tabindex="5"
+                                            value="">
+                                </div>	
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>															
+                                <div class="input-group side-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Side C</div>
+                                    </div>	
+                                    <input type="number" class="numbersonly form-control numpad"  id="sideC_input" tabindex="3" 
+                                            value="">
+                                </div>	
+                            </td>
+                            <td>
+                                <div class="input-group angle-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="fa fa-angle-left"></i>   C</div>
+                                    </div>	
+                                    <input type="number" class="numbersonly form-control numpad" id="angleC_input" tabindex="6"
+                                            value="">
+                                </div>	
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>															
+                                <div class="input-group side-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Triangle Type</div>
+                                    </div>	
+                                    <input type="text"  class="numbersonly form-control numpad"  id="triType_input" tabindex="3" 
+                                            value="">
+                                </div>	
+                            </td>
+                            <td>
+                                <div class="input-group angle-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Triangle Area</div>
+                                    </div>	
+                                    <input type="number" class="numbersonly form-control numpad" id="tryArea_input" tabindex="6"
+                                            value="">
+                                </div>	
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="drawing">
+                    <canvas id="canvas"></canvas>
+                </div>
+            </div>
+            <div class="solve">
+                <button onclick="find()">Find Out</button>
+                <button onclick="reset()">Reset</button>
+            </div>
+        </div>
+
+
+        <div class="bubbles">
+             <img src="images/bubble.png">
+             <img src="images/bubble.png">
+             <img src="images/bubble.png">
+             <img src="images/bubble.png">
+             <img src="images/bubble.png">
+             <img src="images/bubble.png">
+             <img src="images/bubble.png">
+        </div>
+
+
+        <div class="footer" onmouseover="closeFunction()">
+            <div class="contact-name">
+                <h3>Mogovan Jonathan</h3>
+            </div>
+            <div class="contact-img">
+                <a href="contact.html"><h3>Contact Me</h3></a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src = "script1.js"></script> 
+</body>
+</html>

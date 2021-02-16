@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="hero">
+         <div class="navbar" onmouseover="closeFunction()">
+            <a href="index.html">
+                <div class="container">
+                    <div class="face">
+                        <div class="eyes">
+                            <span class="eye"></span>
+                            <span class="eye"></span>
+                        </div>
+                    </div>
+                    <div class="face">
+                        <div class="eyes">
+                            <span class="eye"></span>
+                            <span class="eye"></span>
+                        </div>
+                    </div>
+                    <div class="face">
+                        <div class="eyes">
+                            <span class="eye"></span>
+                            <span class="eye"></span>
+                        </div>
+                    </div>
+                </div> 
+            </a>
+            <div>
+                <button type="button">Sign Up</button>
+                <button type="button">Login</button>
+            </div>
+         </div>
+
+         <div class="contact-box"  onmouseover="closeFunction()">
+            <form action="https://formspree.io/f/xpzoewnz" method="POST" id="my-form">
+
+                <h1>Send Email</h1>
+
+                <div class="textbox">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" placeholder="Full Name" name="" value=""> 
+                </div>
+
+                <div class="textbox">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <input type="text" placeholder="Email" name="" value=""> 
+                </div>
+
+                <div class="textbox">
+                    <i class="fa fa-comment" aria-hidden="true"></i>
+                    <textarea name="message" placeholder="Message"></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+         </div>
+
+         <div id="status" >
+         </div>
+         
+         <div id="menu" class="sidemenu" onmouseover="openFunction()">
+            <img src="images/menu.png" class="menu-img" id="mainbox" onmouseover="openFunction()" onclick="closeFunction()">
+        
+
+            <div class="menu-content">
+                <a href="index.html"><h4><u>Home</u></h4></a>
+                <a href="projects.html"><h4><u>Projects</u></h4></a>
+                <a href="contact.html"><h4><u>Contact</u></h4></a>
+            </div>
+
+
+            <div class="useful-links">
+                <img src="images/info.png">
+                <div class="tooltip">
+                    <img src="images/share.png" onclick="copyUrl()">
+                </div>
+            </div>
+
+         </div>
+
+        
+
+         <div class="bubbles">
+             <img src="images/bubble.png">
+             <img src="images/bubble.png">
+             <img src="images/bubble.png">
+             <img src="images/bubble.png">
+             <img src="images/bubble.png">
+             <img src="images/bubble.png">
+             <img src="images/bubble.png">
+         </div>
+
+
+        <div class="footer" onmouseover="closeFunction()">
+            <div class="contact-name">
+                <h3>Mogovan Jonathan</h3>
+            </div>
+            <div class="contact-img">
+                <a href="contact.html"><h3>Contact Me</h3></a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src = "script.js"></script> 
+</body>
+</html>

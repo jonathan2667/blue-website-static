@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Projects</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="hero">
+         <div class="navbar" onmouseover="closeFunction()">
+            <a href="index.html">
+                <div class="container">
+                    <div class="face">
+                        <div class="eyes">
+                            <span class="eye"></span>
+                            <span class="eye"></span>
+                        </div>
+                    </div>
+                    <div class="face">
+                        <div class="eyes">
+                            <span class="eye"></span>
+                            <span class="eye"></span>
+                        </div>
+                    </div>
+                    <div class="face">
+                        <div class="eyes">
+                            <span class="eye"></span>
+                            <span class="eye"></span>
+                        </div>
+                    </div>
+                </div> 
+            </a>
+            <div>
+                <button type="button">Sign Up</button>
+                <button type="button">Login</button>
+            </div>
+         </div>
+
+         <div id="menu" class="sidemenu" onmouseover="openFunction()">
+            <img src="images/menu.png" class="menu-img" id="mainbox" onmouseover="openFunction()" onclick="closeFunction()">
+        
+
+            <div class="menu-content">
+                <a href="index.html"><h4><u>Home</u></h4></a>
+                <a href="projects.html"><h4><u>Projects</u></h4></a>
+                <a href="contact.html"><h4><u>Contact</u></h4></a>
+            </div>
+
+
+            <div class="useful-links">
+                <img src="images/info.png">
+                <div class="tooltip">
+                    <img src="images/share.png" onclick="copyUrl()">
+                </div>
+            </div>
+
+         </div>
+
+         <header class="header">
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/657px-Wikipedia-logo-v2.svg.png" alt="Wikipedia Logo" />
+        
+            <form class="search-form js-search-form">
+              <input placeholder="Type a keyword and press Enter to search" type="search" class="search-input js-search-input" autofocus />
+            </form>
+          </header>
+        
+          <div class="loading-indicator" onmouseover="closeFunction()">
+            <div class="sk-chase js-spinner hidden">
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+            </div>
+          </div>
+        
+          <section class="search-results js-search-results" style="overflow-y:scroll;" onmouseover="closeFunction()"></section>
+
+         <div class="bubbles">
+            <img src="images/bubble.png">
+            <img src="images/bubble.png">
+            <img src="images/bubble.png">
+            <img src="images/bubble.png">
+            <img src="images/bubble.png">
+            <img src="images/bubble.png">
+            <img src="images/bubble.png">
+       </div>
+
+
+        <div class="footer" onmouseover="closeFunction()">
+            <div class="contact-name">
+                <h3>Mogovan Jonathan</h3>
+            </div>
+            <div class="contact-img">
+                <a href="contact.html"><h3>Contact Me</h3></a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src = "script1.js"></script> 
+</body>
+</html>
